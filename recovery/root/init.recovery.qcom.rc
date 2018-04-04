@@ -41,3 +41,7 @@ service sbinqseecomd /sbin/qseecomd
     user root
     group root
     seclabel u:r:recovery:s0
+
+on fs
+    wait /dev/block/platform/soc/7824900.sdhci
+    symlink /dev/block/platform/soc/7824900.sdhci /dev/block/bootdevice
