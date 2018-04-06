@@ -3,6 +3,7 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 /system         ext4      /dev/block/bootdevice/by-name/system               flags=display="System"
+/system_image   emmc      /dev/block/bootdevice/by-name/system               flags=backup=1;flashimg=1
 /data           ext4      /dev/block/bootdevice/by-name/userdata             flags=length=-16384
 /cache          ext4      /dev/block/bootdevice/by-name/cache                flags=display="Cache"
 /cust           ext4      /dev/block/bootdevice/by-name/cust                 flags=display="Cust";backup=1
