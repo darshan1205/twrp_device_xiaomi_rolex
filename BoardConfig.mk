@@ -67,6 +67,8 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
+TW_INCLUDE_FUSE_EXFAT := true
+TW_INCLUDE_NTFS_3G := true
 TW_INCLUDE_CRYPTO := true
 TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
