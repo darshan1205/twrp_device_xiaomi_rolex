@@ -82,6 +82,10 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 # Disable Mouse Cursor
 TW_INPUT_BLACKLIST := "hbtp_vm"
 
+# Treble
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := false
+TARGET_COPY_OUT_VENDOR := vendor
+
 # exFAT FS Support
 TW_INCLUDE_FUSE_EXFAT := true
 
