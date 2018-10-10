@@ -4,7 +4,8 @@
 
 /system         ext4      /dev/block/bootdevice/by-name/system           flags=display="System"
 /system_image   emmc      /dev/block/bootdevice/by-name/system           flags=backup=0;flashimg=1
-/data           ext4      /dev/block/bootdevice/by-name/userdata         flags=length=-16384;encryptable=footer;fileencryption=ice:aes-256-heh/cache          ext4      /dev/block/bootdevice/by-name/cache            flags=display="Cache"
+/data           ext4      /dev/block/bootdevice/by-name/userdata         flags=length=-16384;encryptable=footer;fileencryption=ice:aes-256-heh
+/cache          ext4      /dev/block/bootdevice/by-name/cache            flags=display="Cache"
 /cust           ext4      /dev/block/bootdevice/by-name/cust             flags=display="Cust";backup=0
 /cust           emmc      /dev/block/bootdevice/by-name/cust             flags=display="Cust Image";backup=0;flashimg=1
 /storage        ext4      /data/media/0                  		             flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
