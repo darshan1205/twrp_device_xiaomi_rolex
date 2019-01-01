@@ -18,7 +18,7 @@
 /persist        emmc      /dev/block/bootdevice/by-name/persist          flags=display="Persist";backup=1;flashimg=1
 /splash         emmc      /dev/block/bootdevice/by-name/splash           flags=display="Boot Logo";backup=1;flashimg=1
 
-/sdcard1        auto      /dev/block/mmcblk1p1                           flags=display="MicroSD";storage;wipeingui;removable
+/external_sd    auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1        flags=display="Micro SDcard";storage;wipeingui;removable
 /usb-otg        auto      /dev/block/sda1                                flags=display="USB Storage";storage;wipeingui;removable
 
 # Bootloader
