@@ -49,6 +49,7 @@ TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/recovery/kernel
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
 TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
 
 # Partitions
