@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  build:
+    docker:
+      # new all-in-one docker image
+      - image: fr3akyphantom/pitchblack-builder:latest
+    environment:
+      MANIFEST_BRANCH: 'android-9.0'
+      PBRP_BRANCH: 'android-9.0'
+      VERSION: '2.9.0'
+      VENDOR: 'xiaomi'
+      CODENAME: 'rolex'
+      BUILD_LUNCH: 'omni_rolex-userdebug'
+      TEST_BUILD: 'true'
+    working_directory: /home/builder/pitchblack
+    steps:
+      - checkout
+      - run:
+          name: AIO Build
+          command: |
+            echo "Set GitAuth Infos too"
+            git config --global user.email $GitHubMail
+            git config --global user.name $GitHubName
+            git config --global color.ui true
+            wget -q https://raw.githubusercontent.com/PitchBlackRecoveryProject/vendor_pb/pb/build.sh
+            source build.sh
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build:
+          context: org-global
