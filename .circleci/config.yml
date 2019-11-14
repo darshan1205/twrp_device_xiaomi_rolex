@@ -12,7 +12,6 @@ jobs:
       CODENAME: 'rolex'
       BUILD_LUNCH: 'omni_rolex-userdebug'
       TEST_BUILD: 'true'
-      EXTRA_CMD: 'rm -rf vendor/qcom/opensource/commonsys/kernel-headers'
     working_directory: /home/builder/pitchblack
     steps: 
       - checkout
