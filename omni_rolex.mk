@@ -20,3 +20,10 @@ $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 $(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_NAME := omni_rolex
+
+# enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=1 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0 \
+    ro.hardware.keystore=msm8937
