@@ -10,10 +10,10 @@ jobs:
       VERSION: '2.9.0'
       VENDOR: 'xiaomi'
       CODENAME: 'rolex'
-      BUILD_LUNCH: 'omni_rolex-userdebug && rm -rf ker*/x*/*/Android.bp'
+      BUILD_LUNCH: 'omni_rolex-userdebug && rm -rf kernel/xiaomi/msm8917/Android.bp'
       TEST_BUILD: 'true'
     working_directory: /home/builder/pitchblack
-    steps:
+    steps: 
       - checkout
       - run:
           name: AIO Build
