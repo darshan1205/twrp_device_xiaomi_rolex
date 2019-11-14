@@ -10,8 +10,9 @@ jobs:
       VERSION: '2.9.0'
       VENDOR: 'xiaomi'
       CODENAME: 'rolex'
-      BUILD_LUNCH: 'omni_rolex-userdebug && rm -rf kernel/xiaomi/msm8917/Android.bp'
+      BUILD_LUNCH: 'omni_rolex-userdebug'
       TEST_BUILD: 'true'
+      EXTRA_CMD: 'rm -rf vendor/qcom/opensource/commonsys/kernel-headers'
     working_directory: /home/builder/pitchblack
     steps: 
       - checkout
