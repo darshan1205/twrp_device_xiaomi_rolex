@@ -1,4 +1,4 @@
-versions: 2
+version: 2
 jobs:
   build:
     docker:
@@ -31,5 +31,5 @@ workflows:
       - build:
           filters:
             branches:
-              only: "9.0"
+              only: android-9.0
           context: org-global
