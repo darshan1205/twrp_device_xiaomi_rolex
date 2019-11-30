@@ -5,7 +5,7 @@ jobs:
       # new all-in-one docker image
       - image: fr3akyphantom/droid-builder:latest
     environment:
-      MANIFEST_BRANCH: 'android-9.0'
+      MANIFEST_BRANCH: 'test'
       PBRP_BRANCH: 'features'
       VERSION: '2.9.0'
       VENDOR: 'xiaomi'
