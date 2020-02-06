@@ -6,7 +6,7 @@ jobs:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'android-9.0'
-      PBRP_BRANCH: '2.9.1'
+      PBRP_BRANCH: 'features'
       VERSION: '2.9.0'
       VENDOR: 'xiaomi'
       CODENAME: 'rolex'
