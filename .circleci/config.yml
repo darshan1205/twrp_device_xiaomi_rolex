@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -10,7 +10,7 @@ jobs:
       VERSION: '2.9.0'
       VENDOR: 'xiaomi'
       CODENAME: 'rolex'
-      BUILD_LUNCH: 'omni_rolex-userdebug'
+      BUILD_LUNCH: 'omni_rolex-eng'
       TEST_BUILD: 'true'
     working_directory: /home/builder/pitchblack
     steps: 
