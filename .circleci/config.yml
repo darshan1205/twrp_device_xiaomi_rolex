@@ -6,12 +6,11 @@ jobs:
       - image: fr3akyphantom/droid-builder:latest
     environment:
       MANIFEST_BRANCH: 'android-9.0'
-      PBRP_BRANCH: 'features'
-      VERSION: '2.9.0'
+      VERSION: '2.9.1'
       VENDOR: 'xiaomi'
       CODENAME: 'rolex'
       BUILD_LUNCH: 'omni_rolex-eng'
-      TEST_BUILD: 'true'
+      PB_OFFICIAL: 'true'
     working_directory: /home/builder/pitchblack
     steps: 
       - checkout
