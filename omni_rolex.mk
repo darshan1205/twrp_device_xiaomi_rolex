@@ -14,12 +14,16 @@
 # limitations under the License.
 #
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 $(call inherit-product, device/xiaomi/rolex/full_rolex.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_NAME := omni_rolex
+
+# enable stock zip packages flash
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=0 \
+    ro.adb.secure=0 \
+    ro.allow.mock.location=0 \
+    ro.hardware.keystore=msm8937
